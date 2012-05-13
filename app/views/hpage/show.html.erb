@@ -1,0 +1,23 @@
+<h1><%= @user %> thinks about...</h1>
+<br>
+
+<% row_start = 14 %>
+<% row_end = 7 %>
+
+<table border="0">
+<% @unique_words.each do |word, count| %>
+  <% if count > 3 && word.length > 3 %>
+    <% if row_start%14 == 0 %>
+        <tr>
+    <% end %>
+      <td><p style="font-family:verdana;font-size:<%= (count*250)/@max %>px;color:green">
+        <%= word %>
+      </p></td>
+    <% if row_end%14 == 0 %>
+      </tr>
+    <% end %>
+    <% row_start += 1%>
+    <% row_end += 1%>
+  <% end %>
+<% end %>
+</table>

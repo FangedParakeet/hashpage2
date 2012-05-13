@@ -1,0 +1,3 @@
+Reading Between The Tweets
+
+  This is a web app that receives any user's Twitter handle and then forms a graphical representation of their most commonly used words, where the more a word is used, the greater its size. It gives a visual display of what any user enjoys tweeting about. That is all.

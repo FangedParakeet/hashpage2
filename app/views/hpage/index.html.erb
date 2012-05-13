@@ -1,0 +1,10 @@
+<h1>Tweets are the windows to the soul...</h1>
+
+<%= image_tag 'logo.jpg' %>
+
+<%= form_tag "http://localhost:3000/hpage/show", :method => "get" do %>
+  <%= label_tag "Get a glimpse into the mind of:" %>
+  <%= text_field_tag "username" %>
+  <%= submit_tag "Enter" %>
+  
+<% end %>
